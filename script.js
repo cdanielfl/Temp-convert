@@ -9,8 +9,13 @@ function converter() {
     console.log(`Temp C°: ${tempC}`);
     const resultado = converterCtoF(tempC);
     
-    document.getElementById('resultado').innerHTML = resultado
+    document.getElementById('resultado').innerHTML = `${resultado} F°`  
 }
 
 
 
+function limpar() {
+    document.getElementById('tempC').value = '';
+    document.getElementById('resultado').innerHTML = '';
+    console.log('Campos limpos');
+}
